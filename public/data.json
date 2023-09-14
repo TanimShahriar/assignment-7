@@ -1,0 +1,65 @@
+[
+  {
+    "img": "https://i.ibb.co/3mGv1ps/Rectangle-1.png",
+    "title": "Introduction to Programming",
+    "description": "Learn the basics of programming in this beginner-friendly course.",
+    "price": "49.99",
+    "Credit": "3hr"
+  },
+  {
+    "img": "https://i.ibb.co/3sy5Np8/Rectangle-2.png",
+    "title": "Introduction to Algorithms",
+    "description": "Explore the world of data science and analytics with hands-on projects.",
+    "price": "79.99",
+    "Credit": "4hr"
+  },
+  {
+    "img": "https://i.ibb.co/yFjRd5P/Rectangle-3.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Become a full-stack web developer with this comprehensive bootcamp.",
+    "price": "129.99",
+    "Credit": "6hr"
+  },
+  {
+    "img": "https://i.ibb.co/qrQ2MGv/Rectangle-4.png",
+    "title": "Basic Data Structures",
+    "description": "Master the art of digital marketing and grow your online presence.",
+    "price": "99.99",
+    "Credit": "5hr"
+  },
+  {
+    "img": "https://i.ibb.co/SKqvkjk/Rectangle-5.png",
+    "title": "Introduction to OOP Python",
+    "description": "Dive into the world of AI and machine learning with practical exercises.",
+    "price": "89.99",
+    "Credit": "4hr"
+  },
+  {
+    "img": "https://i.ibb.co/Nghm8yT/Rectangle-6.png",
+    "title": "Software Engineering",
+    "description": "Capture stunning photos with your camera and learn editing techniques.",
+    "price": "59.99",
+    "Credit": "2hr"
+  },
+  {
+    "img": "https://i.ibb.co/LgF6Ch0/Rectangle-7.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Take control of your finances and make informed investment decisions.",
+    "price": "69.99",
+    "Credit": "3hr"
+  },
+  {
+    "img": "https://i.ibb.co/VBG15XZ/Rectangle-8.png",
+    "title": "Database (MySQL)",
+    "description": "Learn to speak Spanish fluently with interactive lessons and quizzes.",
+    "price": "49.99",
+    "Credit": "4hr"
+  },
+  {
+    "img": "https://i.ibb.co/gMKqrHF/Rectangle-9.png",
+    "title": "Problem-Solving Part",
+    "description": "Find inner peace and improve your well-being through yoga and meditation.",
+    "price": "39.99",
+    "Credit": "2hr"
+  }
+]
