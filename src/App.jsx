@@ -7,8 +7,12 @@ import Courses from './Components/Courses/Courses'
 function App() {
 
   const [courseName, setCourseName] = useState([]);
+  const [creditHour, setCreditHour] = useState(0);
 
-
+  const handleCreditHour = (credit) => {
+    const newCreditHour = creditHour + credit;
+    setCreditHour(newCreditHour);
+  }
 
 
   return (
@@ -17,8 +21,8 @@ function App() {
 
       <div className=' container mx-auto flex rounded-lg'>
 
-        <Courses courseName={courseName} setCourseName={setCourseName}></Courses>
-        <Cart courseName={courseName}></Cart>
+        <Courses courseName={courseName} setCourseName={setCourseName} handleCreditHour={handleCreditHour}></Courses>
+        <Cart creditHour={creditHour} courseName={courseName} handleCreditHour={handleCreditHour}></Cart>
 
       </div>
 

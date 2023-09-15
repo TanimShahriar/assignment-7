@@ -1,5 +1,11 @@
-const Course = ({ tanim, handleSelectCourse }) => {
+const Course = ({ tanim, handleSelectCourse, handleCreditHour }) => {
   const { img, title, description, price, Credit } = tanim;
+
+  const multiFunction = () => {
+    handleSelectCourse(tanim);
+    handleCreditHour(Credit);
+  }
+
   return (
     <div className="m-2 p-2 shadow-lg text-center rounded-md space-y-3">
       <img className="mx-auto mt-4" src={img} alt="" />
@@ -16,7 +22,7 @@ const Course = ({ tanim, handleSelectCourse }) => {
         </div>
 
       </div>
-      <button onClick={() => handleSelectCourse(tanim)} className="text-md w-9/12 px-3 py-1 rounded-md bg-blue-500 text-white">Select</button>
+      <button onClick={multiFunction} className="text-md w-9/12 px-3 py-1 rounded-md bg-blue-500 text-white">Select</button>
     </div>
   );
 };
