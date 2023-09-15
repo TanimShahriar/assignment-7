@@ -1,4 +1,4 @@
-const Course = ({ tanim }) => {
+const Course = ({ tanim, handleSelectCourse }) => {
   const { img, title, description, price, Credit } = tanim;
   return (
     <div className="m-2 p-2 shadow-lg text-center rounded-md space-y-3">
@@ -16,7 +16,7 @@ const Course = ({ tanim }) => {
         </div>
 
       </div>
-      <button className="text-md w-9/12 px-3 py-1 rounded-md bg-blue-500 text-white">Select</button>
+      <button onClick={() => handleSelectCourse(tanim)} className="text-md w-9/12 px-3 py-1 rounded-md bg-blue-500 text-white">Select</button>
     </div>
   );
 };

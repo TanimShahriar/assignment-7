@@ -1,7 +1,15 @@
-const Cart = () => {
+const Cart = ({ courseName }) => {
   return (
     <div className="md:w-1/4 m-4 p-4 shadow-lg mt-10 mb-10  rounded-xl">
-      <h3 className=" text-center text-xl font-medium ">Credit Hour Remaining   </h3>
+      <h3 className=" text-left text-[#2F80ED] text-xl font-medium mb-2">Credit Hour Remaining 20 hr  </h3>
+      <hr />
+      <h3 className=" text-left text-xl font-medium mb-2 mt-2">Course Name  </h3>
+
+      {
+        courseName.map(course => <li className="list-decimal text-left mt-3 mb-2">{course.title}</li>)
+      }
+      <hr />
+      <h4 className="mt-3 text-lg font-medium">Total Credit Hour: </h4>
     </div>
   );
 };

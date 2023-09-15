@@ -1,9 +1,14 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 import Cart from './Components/Cart/Cart'
 import Courses from './Components/Courses/Courses'
 
 
 function App() {
+
+  const [courseName, setCourseName] = useState([]);
+
+
 
 
   return (
@@ -12,8 +17,8 @@ function App() {
 
       <div className=' container mx-auto flex rounded-lg'>
 
-        <Courses></Courses>
-        <Cart></Cart>
+        <Courses courseName={courseName} setCourseName={setCourseName}></Courses>
+        <Cart courseName={courseName}></Cart>
 
       </div>
 
