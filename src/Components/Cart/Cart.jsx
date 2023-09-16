@@ -1,4 +1,4 @@
-const Cart = ({ courseName, creditHour, creditHourRemaining, totalPrice, }) => {
+const Cart = ({ courseName, creditHour, creditHourRemaining, }) => {
 
   return (
     <div className="md:w-1/4 m-4 p-4 bg-white mt-10 mb-10  rounded-xl">
@@ -12,7 +12,7 @@ const Cart = ({ courseName, creditHour, creditHourRemaining, totalPrice, }) => {
       <hr />
       <h4 className="mt-3 mb-2 text-lg font-medium text-[#1C1B1BCD]">Total Credit Hour: {creditHour} </h4>
       <hr />
-      <h4 className="mt-3 text-lg font-medium text-[#1C1B1BCD]">Total Price: {totalPrice} USD </h4>
+
 
     </div>
   );

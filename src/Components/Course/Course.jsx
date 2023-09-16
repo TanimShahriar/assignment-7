@@ -1,8 +1,10 @@
+import { FiDollarSign } from 'react-icons/Fi';
+import { HiOutlineBookOpen } from 'react-icons/Hi';
 //toast
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourRemaining, handleTotalPrice, courseName }) => {
+const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourRemaining, courseName }) => {
   const { img, title, description, price, Credit } = tanim;
 
 
@@ -19,7 +21,7 @@ const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourR
       handleSelectCourse(tanim);
       handleCreditHour(Credit);
       handleCreditHourRemaining(Credit);
-      handleTotalPrice(price);
+
     } else {
       return notify();
     }
@@ -34,11 +36,11 @@ const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourR
       <p className="text-sm px-4">{description}</p>
       <div className="flex justify-center gap-3">
         <div className="flex items-center gap-4">
-          <img className="h-5 w-5" src="src/assets/dollar.svg" alt="" />
+          <FiDollarSign className='text-xl'></FiDollarSign>
           <h4 className="text-md font-medium text-[#1C1B1B99]"> Price: {price}</h4>
         </div>
         <div className="flex items-center gap-4">
-          <img className="h-5 w-5" src="src/assets/frame.svg" alt="" />
+          <HiOutlineBookOpen className='text-xl'></HiOutlineBookOpen>
           <h4 className="text-md font-medium text-[#1C1B1B99]">Credit: {Credit}hr</h4>
         </div>
 
