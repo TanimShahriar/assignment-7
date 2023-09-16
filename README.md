@@ -1,4 +1,4 @@
-Project Features:
+** Project Features **
 . This projects is about course list and course credit hour.
 . In the simple SPA prject we can enroll course, pricing and there is a limit in total credit of course.
 . In this beautiful project course name, description, pricing, credit hour are displayed in each card and also toast notification is added if the condition match.
