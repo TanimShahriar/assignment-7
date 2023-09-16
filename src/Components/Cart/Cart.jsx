@@ -1,5 +1,5 @@
-const Cart = ({ courseName, creditHour, creditHourRemaining, totalPrice }) => {
-  console.log(creditHour);
+const Cart = ({ courseName, creditHour, creditHourRemaining, totalPrice, }) => {
+
   return (
     <div className="md:w-1/4 m-4 p-4 bg-white mt-10 mb-10  rounded-xl">
       <h3 className=" text-left text-[#2F80ED] text-lg font-medium mb-2">Credit Hour Remaining: {creditHourRemaining} hr </h3>

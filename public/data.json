@@ -4,7 +4,7 @@
     "title": "Introduction to C Programming",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 40,
-    "Credit": 4
+    "Credit": 1
   },
   {
     "img": "https://i.ibb.co/3sy5Np8/Rectangle-2.png",
@@ -18,14 +18,14 @@
     "title": "Introduction to C++ for DSA",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..",
     "price": 50,
-    "Credit": 5
+    "Credit": 3
   },
   {
     "img": "https://i.ibb.co/qrQ2MGv/Rectangle-4.png",
     "title": "Basic Data Structures",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 30,
-    "Credit": 3
+    "Credit": 2
   },
   {
     "img": "https://i.ibb.co/SKqvkjk/Rectangle-5.png",
@@ -39,27 +39,27 @@
     "title": "Software Engineering",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 70,
-    "Credit": 7
+    "Credit": 5
   },
   {
     "img": "https://i.ibb.co/LgF6Ch0/Rectangle-7.png",
     "title": "AWS, Cloud Computing",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 50,
-    "Credit": 5
+    "Credit": 3
   },
   {
     "img": "https://i.ibb.co/VBG15XZ/Rectangle-8.png",
     "title": "Database (MySQL)",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 20,
-    "Credit": 2
+    "Credit": 1
   },
   {
     "img": "https://i.ibb.co/gMKqrHF/Rectangle-9.png",
     "title": "Problem-Solving Part",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     "price": 60,
-    "Credit": 6
+    "Credit": 4
   }
 ]

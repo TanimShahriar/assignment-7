@@ -14,15 +14,9 @@ const Courses = ({ courseName, setCourseName, handleCreditHour, handleCreditHour
 
 
   const handleSelectCourse = (course) => {
-    const isExist = courseName.find((item) => item.title == course.title);
+    setCourseName([...courseName, course]);
+  }
 
-    if (isExist) {
-      return alert('Already enrolled');
-    } else {
-      setCourseName([...courseName, course]);
-    }
-
-  };
 
 
 
@@ -31,7 +25,7 @@ const Courses = ({ courseName, setCourseName, handleCreditHour, handleCreditHour
     <div className="md:w-3/4 m-4 p-4 border-1  rounded-xl">
       <div className="grid grid-cols-3 gap-3 ">
         {
-          courses.map(course => <Course key={course.name} tanim={course} handleSelectCourse={handleSelectCourse} handleCreditHour={handleCreditHour} handleCreditHourRemaining={handleCreditHourRemaining} handleTotalPrice={handleTotalPrice} > </Course>)
+          courses.map(course => <Course key={course.name} courseName={courseName} tanim={course} handleSelectCourse={handleSelectCourse} handleCreditHour={handleCreditHour} handleCreditHourRemaining={handleCreditHourRemaining} handleTotalPrice={handleTotalPrice} > </Course>)
         }
       </div>
 

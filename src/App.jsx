@@ -3,6 +3,14 @@ import './App.css'
 import Cart from './Components/Cart/Cart'
 import Courses from './Components/Courses/Courses'
 
+//toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const notify = () => {
+  toast("Limit crossed")
+}
+
 
 function App() {
 
@@ -12,11 +20,13 @@ function App() {
   const [totalPrice, setTotalPrice] = useState(0);
 
 
+
   const handleCreditHour = (credit) => {
     if (creditHour + credit > 20 || creditHourRemaining - credit < 0) {
-      return alert("Limit complete");
+      return
     } else {
       setCreditHour(creditHour + credit);
+
     }
   };
 
@@ -24,11 +34,13 @@ function App() {
     const newCreditHourRemaining = creditHourRemaining - hourRemaining;
 
     if (newCreditHourRemaining < 0 || creditHour + hourRemaining > 20) {
-      return alert("Limit complete");
+      return notify();
     } else {
       setCreditHourRemaining(newCreditHourRemaining);
     }
   };
+
+
 
   const handleTotalPrice = (price) => {
 
@@ -44,7 +56,7 @@ function App() {
 
         <Courses courseName={courseName} setCourseName={setCourseName} handleCreditHour={handleCreditHour} handleCreditHourRemaining={handleCreditHourRemaining} handleTotalPrice={handleTotalPrice}></Courses>
         <Cart totalPrice={totalPrice} creditHour={creditHour} creditHourRemaining={creditHourRemaining} courseName={courseName} handleCreditHour={handleCreditHour} handleCreditHourRemaining={handleCreditHourRemaining}></Cart>
-
+        <ToastContainer />
       </div>
 
     </>

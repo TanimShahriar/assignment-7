@@ -1,14 +1,31 @@
-const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourRemaining, handleTotalPrice }) => {
+//toast
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourRemaining, handleTotalPrice, courseName }) => {
   const { img, title, description, price, Credit } = tanim;
 
-  const multiFunction = () => {
-    handleSelectCourse(tanim);
-    handleCreditHour(Credit);
-    handleCreditHourRemaining(Credit);
-    handleTotalPrice(price);
+
+
+  const notify = () => {
+    toast("Already enrolled")
   }
 
-  console.log(handleCreditHourRemaining);
+
+  const multiFunction = () => {
+    const isExist = courseName.find((item) => item.title == title);
+
+    if (!isExist) {
+      handleSelectCourse(tanim);
+      handleCreditHour(Credit);
+      handleCreditHourRemaining(Credit);
+      handleTotalPrice(price);
+    } else {
+      return notify();
+    }
+
+  }
+
 
   return (
     <div className="m-2 p-2 bg-white text-center rounded-md space-y-3">
@@ -27,6 +44,7 @@ const Course = ({ tanim, handleSelectCourse, handleCreditHour, handleCreditHourR
 
       </div>
       <button onClick={multiFunction} className="text-md w-9/12 px-3 py-1 rounded-md bg-blue-500 text-white">Select</button>
+      <ToastContainer />
     </div>
   );
 };
