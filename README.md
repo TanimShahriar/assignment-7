@@ -1,8 +1,14 @@
-# React + Vite
+Project Features:
+. This projects is about course list and course credit hour.
+. In the simple SPA prject we can enroll course, pricing and there is a limit in total credit of course.
+. In this beautiful project course name, description, pricing, credit hour are displayed in each card and also toast notification is added if the condition match.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How I managed state declaration in this project:
+In this project i have declared five state. They are:
+.  One for adding card in the UI
+.  One for course title
+.  One for Total credit hour
+.  One for remaining credit and
+.  last one for total price.
+For each state declaration I have added event handler individually, the set these event handler in one function then this one function I called in the onClick in the Select buton.
